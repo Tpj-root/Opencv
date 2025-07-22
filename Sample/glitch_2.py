@@ -32,7 +32,7 @@ cv2.createTrackbar("Val Min", "Trackbars", 0, 255, empty)
 cv2.createTrackbar("Val Max", "Trackbars", 255, 255, empty)
 cv2.createTrackbar("Glitch Strength", "Trackbars", 0, 50, empty)  # New control
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
     print("❌ Camera not found.")
